@@ -70,6 +70,5 @@ function checkScreenSize() {
         $('#previewer-btn-reduce').hide()
     }
 }
-checkScreenSize();
 window.addEventListener('resize', checkScreenSize);
 });
