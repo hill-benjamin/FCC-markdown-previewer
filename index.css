@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: 'Poppins';
+}
+
+body{
+    background-image: url(images/svg-background.svg);
+}
+
+
+
+:root{
+    --cyan:#3ba0a0;
+    --light-blue:#87b5b5;
+    --white-blue:#b2b5d6;
+    --navy-blue:#1d2f2f;
+    --light-navy-blue:#3a5f5f;
+    --green:rgb(52, 158, 52);
+    --white:#e0e0e0;
+}
+
+.heading{
+    width: 100%;
+    /* background: linear-gradient(
+        90deg,
+        var(--cyan) 10%,
+        var(--light-navy-blue) 100%
+        ); */
+        color: var(--white);
+        background: #001020;
+    position: relative;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 10px;
+    border-bottom: 1px solid var(--navy-blue);
+}
+
+.container{
+    margin: 20px auto;
+    background-color: var(--white);
+    border: 1px solid var(--navy-blue);
+    box-shadow: 1px 1px 10px 2px black;
+}
+
+#previewer-container{
+    min-height: 200px;
+    max-width: 90%;
+    width: 800px;
+    box-shadow: 1px 1px 10px 2px black;
+    overflow: hidden;
+}
+
+#editor-container{
+    background-color: var(--white);
+    max-width: 80%;
+    width: 600px;
+}
+
+.btn{
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.btn:hover{
+    color: var(--cyan);
+}
+
+.reduce{
+    display: none;
+}
+
+#editor{
+    border: none;
+    outline: none;
+    resize: vertical;
+    overflow-y:scroll;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: var(--white);
+    margin-bottom: -4px;
+    padding: 5px;
+}
+
+#preview{
+    margin: 25px;
+}
+
+code {
+    color: var(--green);
+    background-color: #000000;
+    padding: 1px;
+}
+
+#preview pre{
+    overflow-x: scroll;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: var(--green);
+}
+
+h1,h2,h3,h4{
+    color: black;
+}
+
+@media screen and (min-width:1156px){
+    body{
+        display: flex;
+        padding: 1vh 60px 1vh 60px;
+    }
+
+    #previewer-container{
+       margin: 0 0 0 10px;
+    }
+
+    #editor{
+        resize: none;
+        overflow-y: scroll;
+        height: 91vh !important;
+    }
+
+    #editor-container{
+        position: fixed;
+        height: 50vh;
+        margin-top: 0;
+        width: 41%;
+    }
+
+    button{
+        display: none !important;
+    }
+    .div-fix{
+        width: 65%;
+    }
+}

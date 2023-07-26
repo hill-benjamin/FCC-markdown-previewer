@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="icon" type="image/jpg" href="images/icon.png">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="div-fix"></div>
+    <div class="container" id="editor-container">
+        <div class="heading" id="editor-header">
+            <i class="fa-brands fa-free-code-camp"></i> Editor
+            <button class="expand btn editor-btn" id="editor-btn-expand">
+                <i class="fa-solid fa-maximize"></i>
+            </button>
+            <button class="reduce btn editor-btn" id="editor-btn-reduce">
+                <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </button>
+        </div>
+        <textarea name="" id="editor">
+            
+# My Markdown Previewer (h1)
+----
+#
+
+This website was created using [Marked], that lets you
+convert [Markdown] into HTML. This page will let you type anything you like and see how it gets converted.No more waiting around. 
+    By the way, this is a paragraph. ( ```<p></p>``` )
+
+
+#
+
+## This is a sub-heading (h2)
+#
+-------------------
+
+#
+
+1. Type in stuff on the editor.
+2. See the live updates on the previewer.
+
+#
+That's it.  You can also make text: 
+
+#
+
+bold: **bold text** 
+italic: _itaaalic teeext_
+or...
+both!!!: **_Mr. Robot is peak fiction_**
+
+#
+
+#
+
+### sub-heading(h3)
+-------------
+------------
+------------
+-----------
+check the editor to see how to do this lines
+# 
+
+- **Editor:** In the editor you type simple _markdown_, which will then be converted into html code.
+- **HTML Source:**  What you type in the editor is converted to HTML code (your browser still doesn't make it pretty).
+- **Preview:**  A live display of the generated HTML as it would render in a browser. Finally, its pretty!!!
+
+
+# 
+
+inline-code: ```<div></div>```
+
+
+
+[Marked]: https://github.com/markedjs/marked/
+[Markdown]: http://daringfireball.net/projects/markdown/
+
+#
+This web site was created to solve a problem in:
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+
+---
+#
+
+#### Block of code
+
+```
+// for block-code & inline-code, you can type 3 backticks after and before. 
+
+  const word1 = 'hack'
+  const word2 = 'the'
+  const word3 = 'planet!'
+  console.log(word1, word2, word3); 
+
+```   
+#
+---
+#
+Ready to start writing? 
+        </textarea>
+    </div>
+
+    <div class="container" id="previewer-container">
+        <div class="heading" id="previewer-header">
+            <i class="fa-brands fa-free-code-camp"></i> Preview
+            <button class="expand btn" id="previewer-btn-expand">
+                <i class="fa-solid fa-maximize"></i>
+            </button>
+            <button class="reduce btn" id="previewer-btn-reduce">
+                <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </button>
+        </div>
+        <div id="preview"></div>
+    </div>                  
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="assets/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
