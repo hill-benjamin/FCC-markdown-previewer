@@ -65,9 +65,6 @@ function checkScreenSize() {
     if (window.innerWidth >= 1156) {
         $('#editor-container').show()
         $('#previewer-container').show()
-    
-        $('#previewer-btn-expand').show()
-        $('#previewer-btn-reduce').hide()
     }
 }
 window.addEventListener('resize', checkScreenSize);
