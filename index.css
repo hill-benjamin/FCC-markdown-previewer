@@ -109,6 +109,11 @@ h1,h2,h3,h4{
     color: black;
 }
 
+blockquote{
+    background-color: white;
+    border-left: 4px solid var(--cyan);
+}
+
 @media screen and (min-width:1156px){
     body{
         display: flex;

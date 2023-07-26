@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 // interpret carriage returns as line breaks   
-    marked.setOptions({
-        breaks: true
-    }) 
+   
+marked.setOptions({
+    breaks: true
+}) 
 
 // SECTION 1 - BUTTON FUNCTIONALITY (EXPAND)
 
